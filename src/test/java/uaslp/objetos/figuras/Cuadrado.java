@@ -7,7 +7,7 @@ public class Cuadrado extends Figura {
         this.lado=lado;
     }
 
-    public Cuadrado(){
+    public Cuadrado() {
         super("Cuadrado");
     }
 
@@ -15,10 +15,19 @@ public class Cuadrado extends Figura {
         this.lado = lado;
     }
     public double getArea(){
-        return (lado*lado);
+        public double getArea() throws LadoNoProvistoException{
+            if {
+                return (lado*lado);
+                } catch (LadoNoProvistoException ex){
+                ex.printStackTrace();
+
+            }
+            return = 0;
     }
 
-    public double getLado() {
+    }
+
+    public double getLado( ) {
         return lado;
     }
 }

@@ -36,9 +36,16 @@ public class Triangulo extends Figura {
         return base;
     }
 
-    public double getArea() {
-        return base*altura/2;
+    public double getArea() throws BaseNoProvistaException, AlturaNoProvistaException {
+        try {
+            return base * altura / 2;
+        } catch (BaseNoProvistaException ex) {
+            ex.printStackTrace();
+            return 0;
+        }
     }
+
+
     public String getDescription(){
         return description;
     }
@@ -47,3 +54,5 @@ public class Triangulo extends Figura {
         this.description = msg;
     }
 }
+
+
